@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiss IBAN Validator</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <span class="flag">🇨🇭</span>
+        <h1>Swiss IBAN Validator</h1>
+      </div>
+    </header>
+
+    <!-- Input Section -->
+    <main class="main">
+      <div class="input-section">
+        <label for="iban-input">IBAN eingeben:</label>
+        <input
+          type="text"
+          id="iban-input"
+          placeholder="CH93 0076 2011 6238 5295 7"
+          autocomplete="off"
+          spellcheck="false"
+        >
+        <button id="validate-btn" class="btn-primary">
+          Validieren
+        </button>
+      </div>
+
+      <!-- Result Section -->
+      <div id="result-section" class="result-section hidden">
+        <div id="result-status" class="result-status">
+          <!-- Status wird via JS eingefügt -->
+        </div>
+
+        <div id="result-details" class="result-details">
+          <!-- Details werden via JS eingefügt -->
+        </div>
+
+        <button id="copy-btn" class="btn-secondary hidden">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+          </svg>
+          <span id="copy-text">Kopieren</span>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <span>Powered by</span>
+      <a href="https://erplight.ch" target="_blank" rel="noopener">ERPLight.ch</a>
+    </footer>
+  </div>
+
+  <script src="banks.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
