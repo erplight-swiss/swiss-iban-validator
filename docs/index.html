@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <html lang="de">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Swiss IBAN Validator — Chrome Extension</title>
+      <meta name="description" content="Kostenlose Chrome Extension zur Validierung von Schweizer IBAN-Nummern. Prüft Format, Prüfziffer und erkennt die Bank automatisch.">
+      <style>
+          * { margin: 0; padding: 0; box-sizing: border-box; }
+          body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color: #1f2937; line-height: 1.6; }
+          .hero { background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; padding: 80px 20px; text-align: center; }
+          .hero h1 { font-size: 2.5rem; margin-bottom: 16px; }
+          .hero p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto 32px; }
+          .btn { display: inline-block; padding: 14px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1rem; margin: 8px; }
+          .btn-white { background: white; color: #6366f1; }
+          .btn-outline { border: 2px solid white; color: white; }
+          .features { max-width: 900px; margin: 60px auto; padding: 0 20px; }
+          .features h2 { text-align: center; font-size: 1.8rem; margin-bottom: 40px; }
+          .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
+          .card { background: #f9fafb; border-radius: 12px; padding: 24px; }
+          .card h3 { color: #6366f1; margin-bottom: 8px; }
+          .footer { text-align: center; padding: 40px 20px; background: #f9fafb; margin-top: 60px; }
+          .footer a { color: #6366f1; text-decoration: none; font-weight: 600; }
+      </style>
+  </head>
+  <body>
+      <div class="hero">
+          <h1>Swiss IBAN Validator</h1>
+          <p>Kostenlose Chrome Extension zur Validierung von Schweizer IBAN-Nummern. Prüft Format, Prüfziffer und erkennt die Bank automatisch.</p>
+          <a href="https://chromewebstore.google.com/detail/swiss-iban-validator/aahcjcpmojkcdbighlcpljpcihhidnmc" class="btn btn-white">Chrome Web Store</a>
+          <a href="https://erplight.ch" class="btn btn-outline">ERPLight.ch besuchen</a>
+      </div>
+      <div class="features">
+          <h2>Features</h2>
+          <div class="grid">
+              <div class="card">
+                  <h3>IBAN-Validierung</h3>
+                  <p>Prüft Schweizer IBAN-Nummern auf korrektes Format und gültige Prüfziffer nach ISO 13616.</p>
+              </div>
+              <div class="card">
+                  <h3>Bank-Erkennung</h3>
+                  <p>Erkennt automatisch die Bank anhand der IID (Instituts-Identifikation) — über 200 Schweizer Banken hinterlegt.</p>
+              </div>
+              <div class="card">
+                  <h3>QR-IBAN Support</h3>
+                  <p>Unterscheidet zwischen klassischen IBAN und QR-IBAN (IID 30000–31999) für die Schweizer QR-Rechnung.</p>
+              </div>
+          </div>
+      </div>
+      <footer class="footer">
+          <p>Ein Open-Source-Projekt von <a href="https://erplight.ch">ERPLight</a> — Schweizer Rechnungssoftware für KMU und Freelancer.</p>
+          <p style="margin-top: 8px; font-size: 0.9rem; color: #6b7280;">MIT License · <a href="https://github.com/erplight-swiss/swiss-iban-validator">GitHub Repository</a></p>
+      </footer>
+  </body>
+  </html>
